@@ -9,6 +9,13 @@ myAudio.addEventListener('ended', function() {
 }, false);
 myAudio.play();
   
+ myAudio = new Audio('https://www.myinstants.com//media/sounds/chicken_2.mp3'); 
+myAudio.addEventListener('ended', function() {
+    this.currentTime = 0;
+    this.play();
+}, false);
+myAudio.play();
+  
 </script>
   
 </html>
